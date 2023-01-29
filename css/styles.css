@@ -164,7 +164,7 @@ a.logo{
 
 .item-title-port{}
 
-.item-text-port{}
+.item-text-port{color:var(--slate);}
 
 .port-img{}
 
