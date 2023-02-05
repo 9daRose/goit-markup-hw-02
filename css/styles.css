@@ -162,7 +162,14 @@ a.logo{
 /*filter buttons*/
 
 
-.btn-list{}
+.btn-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 72px;
+        margin-top: 96px;
+        gap: 24px;
+}
 
 .btn-item{}
 
