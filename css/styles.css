@@ -12,6 +12,16 @@
         --main-color: #FFF;
 }
 
+/*html{box-sizing: border-box;}
+
+*, *::before, *::after{
+        box-sizing: inherit;
+}*/
+
+p,h1,h2,h3,h4,h5,h6 {
+        margin: 0;
+}
+
 body{
 background-color:var(--main-color);
 font-family: 'Roboto', sans-serif;
@@ -19,6 +29,17 @@ color:var(--slate);
 font-style: normal;
 font-size: 16px;
 letter-spacing: 0.02em;
+}
+
+.container{
+    width: 1158px;
+    padding: 0px 15px 0px 15px;
+    margin: 0 auto;
+}
+
+.section{
+        padding-bottom: 120px;
+        padding-top: 120px;
 }
 
 .link {
@@ -36,6 +57,8 @@ a{}
 
 .list {
   list-style: none;
+  padding: 0px;
+  margin:0px;
 }
 
 img{border-style: none;}
@@ -54,22 +77,13 @@ img{border-style: none;}
 }
 
 /*titles*/
-.main-text{
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1em;
-}
+
 .title-about, .team-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.1em;
 }
-.section-info-title{
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2em;
 
-}
 
 
 /*-------logo------*/
@@ -78,6 +92,7 @@ a.logo{
         font-weight: 800;
         font-size: 18px;
         line-height: 1.3em;
+        margin-right: 76px;
         }
 
 .log-web{color:#4D5AE5;}
@@ -85,11 +100,22 @@ a.logo{
 .log-studio-footer{color:var(--cloud);}
 
 /*-----------header-------------*/
-.header{}
+.header{
+        border-bottom: 1px solid var(--cornflower);
+        padding-top: 24px;
+        padding-bottom: 24px;
+}
+.header-cont{
+        display: flex;
+        align-items: center;
+        }
 /*header*/
 .header-nav{}
 
-.nav-list{}
+.nav-list{
+        display: flex;
+        gap:40px;
+}
 
 .nav-item{}
 
@@ -107,9 +133,13 @@ a.logo{
 
 
 /*address*/
-.address{}
+.address{margin-left: auto;}
 
-.address-list{}
+.address-list{
+        display: flex;
+        gap: 40px;
+        
+}
 
 .address-item{}
 
@@ -128,8 +158,9 @@ a.logo{
         color:var(--ocean);
 }
 /*------------content portfolio-------------*/
+.main-port{}
 /*filter buttons*/
-.filter-btn{}
+
 
 .btn-list{}
 
@@ -188,13 +219,26 @@ a.logo{
 /*sec 1*/
 .main-text-btn{
         background-color: var(--navy-blue);
-}
+        text-align: center;
+        padding-top: 188px;
+        padding-bottom: 188px;
+      }
 
 .main-text{
+        display: inline-block;
         color:#fff;
+        padding-bottom: 48px;
+        max-width: 508px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1em;
+
 }
+.main-btn-block{text-align: center;}
 
 .main-btn{
+        display: inline-block;
         cursor: pointer;
         font-weight: 500;
         font-family: inherit;
@@ -205,6 +249,10 @@ a.logo{
         color: #fff;
         border-radius: 4px;
         border: 0;
+        padding:16px 32px;
+        min-width: 169px; 
+        text-align: center;
+        
 }
 
 .main-btn:hover,
@@ -215,22 +263,36 @@ a.logo{
 /*sec 2 section-info*/
 .section-info{}
 
-.section-info-list{}
 
-.section-info-item{}
+
+.section-info-list{
+                display: flex;
+                column-gap: 24px;
+                flex-wrap: nowrap;
+               
+                
+}
+
+.section-info-item{width: calc((100% - 72px) / 4);}
 
 .section-info-text{}
 
 .section-info-title{
         color:var(--navy-blue);
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2em;
 }
 
 /*sec 3 about*/
 .section-about{
-        
+    padding-top:0px;    
 }
 
-.title-about{}
+.title-about{
+        text-align: center;
+}
 
 .about-list{}
 
