@@ -184,6 +184,7 @@ a.logo{
         background-color:var(--cloud);
         color:var(--iris);
         letter-spacing: 0.04em;
+        padding:12px 24px;
         
 }
 
