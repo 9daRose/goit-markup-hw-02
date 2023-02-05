@@ -197,13 +197,34 @@ a.logo{
 /*portfolio(port) list*/
 
 
-.list-port{}
+.list-port{
+        display:flex;
+        flex-wrap: wrap;
+        
+        }
 
-.item-port{}
+.item-port{
+        width: calc((100% - 44px) / 3);
+        margin-bottom: 48px;
+}
 
-.item-title-port{}
 
-.item-text-port{}
+
+.item-port:nth-child(n3){margin-right: 0px;}
+
+.item-title-port{
+      
+}
+
+.item-text-port{
+    padding-top:8px;   
+}
+
+.description-port{
+                border-right: 1px solid var(--cornflower);
+                border-bottom: 1px solid var(--cornflower);
+                border-left: 1px solid var(--cornflower);
+}
 
 .port-img{}
 
